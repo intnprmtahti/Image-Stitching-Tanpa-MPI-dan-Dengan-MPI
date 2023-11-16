@@ -10,14 +10,17 @@ melalui Ubuntu Desktop.
     1.1 Windows
   Folder berada pada direktori :
 C:\Users\Intan\Downloads\image-stitching-opencv Tugas Besar\image-stitching-opencv Tugas Besar\image-stitching-opencv Tugas Besar
+
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/51ebf464-68d0-4a0b-bbba-e57fb592c974)
 
 1.2	Ubuntu Desktop
 Folder berada pada direktori :
 /home/harrypotter/Voldemort/image-stitching-opencv Tugas Besar/ image-stitching-opencv Tugas Besar
+
  ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/4a511264-4712-461d-98ff-762888c83e5d)
 
 Gambar yang digunakan :
+
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/562de335-5bac-4109-a49b-7be1bff1d90a)
 
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/b81e969f-7800-4a1e-8c1c-ca64892b4a89)
@@ -25,6 +28,7 @@ Gambar yang digunakan :
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/151f3a62-f6a6-4307-8749-a55addc9408a)
 
 Output :
+
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/a345b7cf-f655-4bc2-80f6-822271df0ee4)
 
 
@@ -112,24 +116,29 @@ else:
 # ... (existing code)
 ```
 
+
 2.	Lakukan penginstallan berikut pada cmd dan terminal ubuntu :
--	pip install imutils 
--	pip install opencv-python
--	pip install numpy
+`pip install imutils`
+`pip install opencv-python`
+`pip install numpy`
 
 # A. Pada VSCode
 ## 1.	Buka folder image-stitching-opencv Tugas Besar pada vscode
+
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/e9795653-01ac-4ab5-8654-6792898afd6e)
 
 Tampilan :
+
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/83f89935-f7d3-4541-b2cb-547c7579b9e4)
 
 ## 2. Output
 Untuk menampilkan output, tekan terminal ~> new terminal ~>
 (Lalu masukkan perintah) : python image_stitching_simple.py --images images/scottsdale --output output.png (lalu Enter)
+
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/9549d31a-8e1e-413f-9d9f-64bb1c9b3a25)
 
 Output : 
+
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/49da5354-3b3c-4e6e-aa4f-53121c1edc07)
 
 # B. Pada CMD
@@ -223,6 +232,7 @@ Buat folder python dengan nama bebas lalu masukan codingan python, dengan perint
 `sudo touch <namafolder.py>`
 
 contoh : 
+
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/c01dbefe-c140-48a4-9bfd-b511047d486f)
 
 
