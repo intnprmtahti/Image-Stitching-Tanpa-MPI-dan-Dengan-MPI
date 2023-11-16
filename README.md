@@ -111,6 +111,7 @@ else:
 
 # ... (existing code)
 ```
+
 2.	Lakukan penginstallan berikut pada cmd dan terminal ubuntu :
 -	pip install imutils 
 -	pip install opencv-python
@@ -134,6 +135,7 @@ Output :
 # B. Pada CMD
 ## 1. Pindah ke direktori :
 C:\Users\Intan\Downloads\image-stitching-opencv Tugas Besar\image-stitching-opencv Tugas Besar\image-stitching-opencv Tugas Besar
+
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/f1721d0c-c00d-41f3-be12-4bffbd245e90)
 
 ## 2. Menampilkan output dengan perintah :
@@ -142,14 +144,13 @@ C:\Users\Intan\Downloads\image-stitching-opencv Tugas Besar\image-stitching-open
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/3e4e37f0-1ca1-440e-bef2-99a550531270)
 
 # C. Pada Ubuntu Desktop
-## 1. Pindah ke direktori, tempat program dibuat. 
+## 1. Pindah ke direktori, tempat program dibuat
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/e902397e-224a-4a02-bf58-93ad39d4eb98)
 
 ## 2.	Cek path file 
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/806d946f-a9e4-492a-8da8-c5d68f9a67e5)
 
 ## 3.	Running program 
-dengan perintah :
 `python3 <namafile.py> --images images/Scottsdale –output output.png`
 
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/8c271792-6a75-453f-9e5e-aaef1fd0db34)
@@ -177,6 +178,7 @@ Untuk Penginstallan MPI dapat dilihat pada link berikut, pada bagian 5. MPI
 
 ## 3.1 Konfigurasi File
 >*Lakukan di **Master** dan **Worker***
+
   ### 3.1.1 Cek Cek IP Address 
   `hostname -I`
 
@@ -230,12 +232,12 @@ Pindah ke direktori tempat folder dibuat.
 # 5. Mount Folder
   >*Lakukan di **Worker**
 
-`sudo mount master: /home/harrypotter/voldemort /home/harrypotter/voldemort 
+`sudo mount master: /home/harrypotter/voldemort /home/harrypotter/voldemort`
 
 # 6. Running
  >*Lakukan di **Master**
 
-`mpiexec -n 3 -host master, worker1, worker2 python3 /home/harrypotter/voldemort/stitchingimage/stitching/image_stitching_simple.py --images /home/harrypotter/voldemort/stitchingimage/stitching/images/scottsdale/ --output output.png
+`mpiexec -n 3 -host master, worker1, worker2 python3 /home/harrypotter/voldemort/stitchingimage/stitching/image_stitching_simple.py --images /home/harrypotter/voldemort/stitchingimage/stitching/images/scottsdale/ --output output.png`
 
 # 7. Output
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/d8087810-1519-4c00-bc31-8533b20ffccd)
