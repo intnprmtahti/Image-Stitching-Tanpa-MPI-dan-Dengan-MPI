@@ -4,16 +4,17 @@ melalui Ubuntu Desktop.
 
 # Sebelum Bekerja
 >*Lakukan di Windows dan Ubuntu Desktop*
-1.  Buat Sebuah Folder
+
+1. Buat Sebuah Folder
    Sebuah folder yang berisi potongan-potongan gambar, codingan python, serta output gambar.
 
-    1.1 Windows
+1.1 Windows
   Folder berada pada direktori :
 C:\Users\Intan\Downloads\image-stitching-opencv Tugas Besar\image-stitching-opencv Tugas Besar\image-stitching-opencv Tugas Besar
 
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/51ebf464-68d0-4a0b-bbba-e57fb592c974)
 
-1.2	Ubuntu Desktop
+1.2 Ubuntu Desktop
 Folder berada pada direktori :
 /home/harrypotter/Voldemort/image-stitching-opencv Tugas Besar/ image-stitching-opencv Tugas Besar
 
