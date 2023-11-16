@@ -5,7 +5,7 @@ melalui Ubuntu Desktop.
 # Sebelum Bekerja
 >*Lakukan di Windows dan Ubuntu Desktop*
 1.  Buat Sebuah Folder
-   Sebuah folder yang berisi potongan-potongan gambar, codingan python, serta output    gambar.
+   Sebuah folder yang berisi potongan-potongan gambar, codingan python, serta output gambar.
 
     1.1 Windows
   Folder berada pada direktori :
