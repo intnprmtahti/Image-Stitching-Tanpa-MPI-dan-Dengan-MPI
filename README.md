@@ -2,7 +2,7 @@
 Membahas proses image stitching tanpa MPI (CMD, VSCode, Ubuntu Desktop) dan dengan MPI m
 melalui Ubuntu Desktop.
 
-# Sebelum Bekerja
+## Sebelum Bekerja
 >*Lakukan di Windows dan Ubuntu Desktop*
 
 1. Buat Sebuah Folder
@@ -172,27 +172,33 @@ C:\Users\Intan\Downloads\image-stitching-opencv Tugas Besar\image-stitching-open
 ## Topologi
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/f88a039c-5c6c-4bbd-bad3-21a3fefe00c0)
 
-# 1. Install MPI
+## Sebelum Bekerja
+>*Lakukan di **Master**
+- Buat Folder yang berisi potongan-potongan gambar dan codingan python.
+- Cek path direktori tempat folder berada.
+
+## 1. Install MPI
 >*Lakukan di **Master** dan **Worker***
+### 1.1 Install MPI dengan menggunakan perintah sudo apt install openmpi-bin libonmpi-dev
+### 1.2 Install python 3 dengan perintah sudo apt install python3-pip 
+### 1.3 Install mpi4py dengan perintah pip install mpi4py
 
-Untuk Penginstallan MPI dapat dilihat pada link berikut, pada bagian 5. MPI
-[https://github.com/intnprmtahti/Eksekusi-BubbleSort---MPI]
 
-# 2. Install Imutils dan Opencv
+## 2. Install Imutils dan Opencv
 >*Lakukan di **Master** dan **Worker***
 
 `pip install imutils`
 `pip install opencv-python`
 
-# 3. Konfigurasi SSH
+## 3. Konfigurasi SSH
 
-## 3.1 Konfigurasi File
+### 3.1 Konfigurasi File
 >*Lakukan di **Master** dan **Worker***
 
-  ### 3.1.1 Cek Cek IP Address 
+  #### 3.1.1 Cek Cek IP Address 
   `hostname -I`
 
-  ### 3.1.2 Input perintah
+  #### 3.1.2 Input perintah
   `sudo nano /etc/host`
 
    Master :
@@ -208,16 +214,16 @@ Untuk Penginstallan MPI dapat dilihat pada link berikut, pada bagian 5. MPI
         172.20.10.5 master
         172.20.10.7	worker2
 
-## 3.2 Konfigurasi SSH
+### 3.2 Konfigurasi SSH
 >*Lakukan di **Master** dan **Worker***
 
-  ### 3.2.1 Master
+  #### 3.2.1 Master
   Master melakukan penghubungan pada setiap komputer dengan perintah :
 `ssh harrypotter@master`
 `ssh harrypotter@worker1`
 `ssh harrypotter@worker2`
 
-  ### 3.2.2 Worker
+  #### 3.2.2 Worker
   Worker mengubungkan ssh dengan komputernya sendiri.
 
   Worker 1 
@@ -226,29 +232,18 @@ Untuk Penginstallan MPI dapat dilihat pada link berikut, pada bagian 5. MPI
   Worker 2
   `ssh harrypotter@worker2`
 
-  # 4. Buat Direktori .py
-  >*Lakukan di **Master**
-
-Buat folder python dengan nama bebas lalu masukan codingan python, dengan perintah :
-`sudo touch <namafolder.py>`
-
-contoh : 
-
-![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/c01dbefe-c140-48a4-9bfd-b511047d486f)
-
-
 Pindah ke direktori tempat folder dibuat.
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/a16de281-a0cb-40c2-ab55-97ca20b8a208)
 
-# 5. Mount Folder
+## 4. Mount Folder
   >*Lakukan di **Worker**
 
 `sudo mount master: /home/harrypotter/voldemort /home/harrypotter/voldemort`
 
-# 6. Running
+## 5. Running
  >*Lakukan di **Master**
 
 `mpiexec -n 3 -host master, worker1, worker2 python3 /home/harrypotter/voldemort/stitchingimage/stitching/image_stitching_simple.py --images /home/harrypotter/voldemort/stitchingimage/stitching/images/scottsdale/ --output output.png`
 
-# 7. Output
+## 6. Output
 ![image](https://github.com/intnprmtahti/Image-Stitching-Tanpa-MPI-dan-Dengan-MPI/assets/150001747/d8087810-1519-4c00-bc31-8533b20ffccd)
